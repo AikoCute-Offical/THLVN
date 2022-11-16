@@ -250,22 +250,22 @@ status() {
 
 show_menu() {
     echo -e "
-  ${green}AikoR Các tập lệnh quản lý phụ trợ，${plain}${red}không hoạt động với docker${plain}
+  ${green}AikoR Backend management scripts，${plain}${red}does not work with docker${plain}
 --- https://github.com/Github-Aiko/AikoR ---
-  ${green}0.${plain} Cấu hình AikoR
+  ${green}0.${plain} Configure AikoR
 ————————————————
-  ${green}1.${plain} Cài Đặt AikoR
-  ${green}2.${plain} Cập nhật AikoR
-  ${green}3.${plain} Gỡ cài AikoR
+  ${green}1.${plain} Install AikoR
+  ${green}2.${plain} Update AikoR
+  ${green}3.${plain} Uninstall AikoR
 ————————————————
-  ${green}4.${plain} Khởi động AikoR
-  ${green}5.${plain} Dừng AikoR
+  ${green}4.${plain} Start AikoR
+  ${green}5.${plain} Stop AikoR
   ${green}6.${plain} View AikoR logs
 ————————————————
   ${green}7.${plain} Update AikoR shell
  "
  # Cập nhật tiếp theo có thể được thêm vào chuỗi trên
-    echo && read -p "Vui lòng chọn [0-7]: " num
+    echo && read -p "Please choose [0-7]: " num
 
     case "${num}" in
         0) config
